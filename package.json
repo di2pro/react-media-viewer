@@ -16,5 +16,8 @@
     "react"
   ],
   "author": "Dmitry Uvarov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "4.2.0"
+  }
 }
