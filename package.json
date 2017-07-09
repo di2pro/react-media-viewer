@@ -1,0 +1,20 @@
+{
+  "name": "react-media-viewer",
+  "version": "0.1.0",
+  "description": "It's a media files viewer with react",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/di2pro/react-media-viewer.git"
+  },
+  "keywords": [
+    "media",
+    "files",
+    "viewer",
+    "react"
+  ],
+  "author": "Dmitry Uvarov",
+  "license": "ISC"
+}
