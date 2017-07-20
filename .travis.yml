@@ -3,3 +3,5 @@ node_js: node
 cache:
   diretories:
     - node_modules
+after_success:
+  - npm run coveralls

@@ -2,15 +2,15 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, 'src', 'index.js')
+    index: path.resolve(__dirname, 'src', 'index.js'),
   },
   devtool: 'source-map',
   resolve: {
-    extensions:  ['js', 'jsx']
+    extensions: ['js', 'jsx'],
   },
   output: {
     filename: '[name][hash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -19,7 +19,7 @@ module.exports = {
         exclude: /node_modules/,
         include: path.resolve(__dirname, 'src'),
         loader: 'babel-loader',
-      }
-    ]
-  }
+      },
+    ],
+  },
 };

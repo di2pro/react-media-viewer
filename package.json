@@ -3,10 +3,9 @@
   "version": "0.2.0",
   "description": "It's a media files viewer with react",
   "scripts": {
-    "build": "rm -rf dist && webpack",
-    "lint": "eslint src",
-    "jest": "jest",
-    "test": "npm run lint && npm run jest"
+    "build": "rimraf dist && webpack",
+    "coveralls": "cat coverage/lcov.info | coveralls && rimraf coverage",
+    "test": "eslint . && jest"
   },
   "repository": {
     "type": "git",
@@ -24,15 +23,18 @@
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.1",
     "babel-preset-es2015": "6.24.1",
+    "coveralls": "2.13.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.0.2",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
     "jest": "20.0.4",
+    "rimraf": "2.6.1",
     "webpack": "3.2.0"
   },
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+    "collectCoverageFrom" : ["**/*.{js,jsx}", "!**/node_modules/**"]
   }
 }
