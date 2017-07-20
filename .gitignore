@@ -5,8 +5,8 @@
 .idea
 .vscode
 
-# dist
-dist
+# Code coverage
+coverage
 
 # libs
 node_modules
