@@ -2,15 +2,15 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, 'src', 'index.js'),
+    index: path.resolve(__dirname, 'src', 'index.jsx'),
   },
-  devtool: 'source-map',
   resolve: {
-    extensions: ['js', 'jsx'],
+    extensions: ['.js', '.jsx'],
   },
   output: {
-    filename: '[name][hash].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -21,5 +21,8 @@ module.exports = {
         loader: 'babel-loader',
       },
     ],
+  },
+  externals: {
+    react: 'commonjs react',
   },
 };
