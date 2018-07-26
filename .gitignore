@@ -5,6 +5,9 @@
 .idea
 .vscode
 
+# Build
+dist
+
 # Code coverage
 coverage
 .coveralls.yml

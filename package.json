@@ -2,7 +2,8 @@
   "name": "react-media-viewer",
   "version": "0.2.0",
   "description": "It's a media files viewer with react",
-  "main": "dist/index.js",
+  "main": "dist",
+  "files": ["dist"],
   "scripts": {
     "build": "rimraf dist && webpack",
     "coveralls": "cat coverage/lcov.info | coveralls && rimraf coverage",
