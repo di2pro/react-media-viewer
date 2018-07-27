@@ -4,5 +4,10 @@
     ["env", {
       "modules": false
     }]
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [["env"], "react"]
+    }
+  }
 }
