@@ -2,6 +2,10 @@
   "name": "react-media-viewer",
   "version": "0.2.0",
   "description": "It's a media files viewer with react",
+  "main": "dist",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rimraf dist && webpack",
     "coveralls": "cat coverage/lcov.info | coveralls && rimraf coverage",
@@ -19,25 +23,39 @@
   ],
   "author": "Dmitry Uvarov",
   "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
   "devDependencies": {
-    "babel-jest": "20.0.3",
-    "babel-loader": "7.1.1",
-    "babel-preset-es2015": "6.24.1",
-    "coveralls": "2.13.1",
-    "eslint": "3.19.0",
-    "eslint-config-airbnb": "15.0.2",
-    "eslint-plugin-import": "2.7.0",
-    "eslint-plugin-jsx-a11y": "5.1.1",
-    "eslint-plugin-react": "7.1.0",
-    "jest": "20.0.4",
-    "rimraf": "2.6.1",
-    "webpack": "3.2.0"
+    "babel": "^6.23.0",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.4.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom" : [
+    "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!**/node_modules/**"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/setup.enzyme.js",
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
