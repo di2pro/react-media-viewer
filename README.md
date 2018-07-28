@@ -4,7 +4,4 @@
 [![Code Climate](https://codeclimate.com/github/di2pro/react-media-viewer/badges/gpa.svg)](https://codeclimate.com/github/di2pro/react-media-viewer)
 
 ## Description
-Since I've been working on different projects where I have to handle images (transcoded pdf, psd and etc), audio and video files and put them in the UI by using beautiful styles and markdowns I've decided to contribute all those things in one library. The idea is to have only one viewer that can handle different file types and render pretty nice default template (or getting custom)
-
-## Status
-Project is still in the maintaining. Once it will be realesed I'll add some info on popular resources and write a github pages example
+The media viewer is a universal component that can handle various types of files like images/video/audio files. It should render them correctly and show a toolbar to transform them, to call actions and the most important thing is to collaborate on them by using a canvas
