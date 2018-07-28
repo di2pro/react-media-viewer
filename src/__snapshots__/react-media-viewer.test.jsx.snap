@@ -2,8 +2,8 @@
 
 exports[`React Media Viewer should match its snapshot 1`] = `
 <div>
-  <h1>
-    Hello World!!!
-  </h1>
+  <span>
+    React Media Viewer
+  </span>
 </div>
 `;
